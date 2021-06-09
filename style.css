@@ -1,0 +1,60 @@
+/*GENERAL */
+html,body {
+    font-family: Raleway;
+}
+
+.flexCentre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexAround {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.flexBetween{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.decorNone {
+    text-decoration: none;
+}
+
+/* NAV */
+
+.sizeNav {
+    height: 100px;
+}
+
+.sizeLiens {
+    width: 45%;
+}
+
+.sizeLien {
+    width: 140px;
+    height: 99px;
+}
+
+.colorLien {
+    color: #0065FC;
+}
+
+c.olorLien2 {
+    color: black;
+}
+
+.bordureNav {
+    border-top: 1px solid #0065FC;
+}
+
+.bordureNav2 {
+    border-top: 1px solid transparent;
+}
+
+.margLogo {
+    margin-bottom: 13px
+}
