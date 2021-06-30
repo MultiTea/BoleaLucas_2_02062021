@@ -1,60 +1,142 @@
 /*GENERAL */
-html,body {
-    font-family: Raleway;
+html,
+body {
+  font-family: Raleway;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
-.flexCentre {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#blocpage {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-.flexAround {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.flexBetween{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+h1,h2 {
+    font-weight: bold;
 }
 
-.decorNone {
-    text-decoration: none;
+ul, li {
+  list-style: none;
+  padding: initial;
 }
 
-/* NAV */
-
-.sizeNav {
-    height: 100px;
+/*navigation*/
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px 20px 10px 20px;
+}
+#ancres {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+#logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#logo img {
+  width: 100px;
+  height: 50px;
+  padding-top: 15px;
 }
 
-.sizeLiens {
-    width: 45%;
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+nav li {
+  margin-right: 15px;
+}
+nav a {
+  color: black;
+  text-decoration: none;
+}
+nav a:hover {
+  color: #0065fc;
+  border-top: 3px solid #0065fc;
+  padding-top: 44px;
+}
+#inscription {
+  color: #0065fc;
+  font-weight: bold;
+  padding-top: 15px;
 }
 
-.sizeLien {
-    width: 140px;
-    height: 99px;
+#barre_recherche {
+  display: flex;
+  width: 25%;
+  border: 2px black solid;
+  border-radius: 20px;
+  justify-self: stretch;
 }
 
-.colorLien {
-    color: #0065FC;
+#champ_recherche {
+font-family: Raleway;
+font-size: large ;
+font-weight: bold;
+border: none ;
+height: 50px;
+width: 70%;
 }
 
-c.olorLien2 {
-    color: black;
+#bouton_recherche {
+  font-family: Raleway;
+  font-size: large ;
+  font-weight: bold;
+  color: white;
+  background-color: #0065fc;
+  height: 50px;
+  width: 30%;
 }
 
-.bordureNav {
-    border-top: 1px solid #0065FC;
+#bouton_recherche:hover {
+  background-color: #0054d3;
 }
 
-.bordureNav2 {
-    border-top: 1px solid transparent;
+#bouton_recherche:active {
+  border: 2px ;
+  border-style: inset;
+  border-color: #0054d3;
 }
 
-.margLogo {
-    margin-bottom: 13px
+.filtres {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  height: 20px;
+  padding-block: 20px;
 }
+
+#bouton-filtre {
+  display: inline-block;
+  font-family: Raleway;
+  font-size: large;
+  font-weight: bold ;
+  border: none;
+  height: 20px;
+}
+
+.blocherbergement-populaire {
+display: flex;
+justify-content: space-between;
+}
+
+#blochebergement-marseille {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 60%;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 75%;
+}
+

@@ -4,48 +4,113 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width-device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Reservia</title>
   </head>
 
   <body>
     <header>
-      <!-- Logotype -->
-
-      <nav class="sizeNav">
-        <div class="flexBetween">
-          <img class="margLogo" src="./images/logo/Reservia@3x.png" alt="Logo Reservia" width="120px" height="50px"/>
-          <div class=" sizeLiens flexAround">
-              <div class="sizeLien flexCentre bordureNav"><a class="colorLien decorNone" href="#">Hébergements</a></div>
-              <div class="sizeLien flexCentre bordureNav2"><a class="colorLien2 decorNone" href="#">Activités</a></div>
-              <div class="sizeLien flexCentre bordureNav2"><a class="colorLien decorNone"href="#">S'inscrire</a></div>
-          </div>
+      <div id="logo">
+        <img src="images/logo/Reservia@3x.png" alt="Logo Reservia" />
+      </div>
+      <nav>
+        <div id="ancres">
+          <ul id="liens_mobiles">
+            <li>
+              <a href="#hebergements" id="lien_hebergements">Hébergements</a>
+            </li>
+            <li><a href="#activites" id="lien_activites">Activités</a></li>
+          </ul>
+          <span id="inscription">S'inscrire</span>
         </div>
-
       </nav>
     </header>
 
+  
     <!--Images doivent être clicables
     Ancre sur la partie menu-->
 
     <div id="blocpage">
       <section id="blocrecherche">
+        <p><h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        En plein centre ville ou en pleine nature</p>
+        <div id="barre_recherche">
+        <img href/>
+        <input type="search" name="Recherche" id="champ_recherche" maxlength="50" placeholder="Marseille, France"/>
+        <input type="submit" value="Rechercher" id="bouton_recherche">
+        </div>
+        <br><br>
+        <div class="filtres">
+          <h1>Filtres</h1>
+          <span><img/><button>Économique</button></span>
+          <span><img/><button>Familial</button></span>
+          <span><img/><button>Romantique</button></span>
+          <span><img/><button>Animaux autorisés</button></span>
+        </div>
+        <br>
+        <p>Plus de 500 logements sont disponibles dans cette ville</p>
+
         <!--Filtres de recherche + Recherche + Phrases de récapitualtif-->
       </section>
       <section id="blochebergement-populaire">
-        <!--Blocs les plus populaires-->
+        <div id="blocherbergement-marseille">
+          <h1>Hébergements à Marseille</h1>
 
-        <aside id="lespopulaires"></aside>
+            <a><img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" height="200px"/></a>
+            <a><img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" height="200px"/></a>
+            <a><img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" height="200px"/></a>
+            <a><img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" height="200px"/></a>
+            <a><img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" height="200px"/></a>
+            <a><img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" height="200px"/></a>
+        </div>
+        <aside id="lespopulaires">
+          <h1>Les plus populaires</h1>
+          <div id="">
+            <a><img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" height="200px"/></a>
+            <a><img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" height="200px"/></a>
+            <a><img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" height="200px"/></a>
+          </div>
+
+        </aside>
       </section>
-      <section id="activites"></section>
+      <section id="activites">
+        <h1>Activités à Marseille</h1>
+
+
+      </section>
     </div>
   </body>
 
-  <footer></footer>
+  <footer>
+    <div class="basdepage">
+      <h1>À propos</h1>
+      <ul>
+      <li><a>Fonctionnement du site</a></li>
+      <li><a>Conditions générales de vente</a></li>
+      <li><a>Données et confidentialité</a></li>
+    </ul>
+    </div>
+    <div>
+      <ul>
+      <h1>Nos hébergements</h1>
+      <li><a>Chartre qualité</a></li>
+      <li><a>Soumettre votre hôtel</a></li>
+    </ul>
+    </div>
+    <div>
+    <h1>Assistance</h1>
+  <ul>
+    <li><a>Centre d'aide</a></li>
+    <li><a>Nous contacter</a></li>
+  </ul>
+</div>
+  </footer>
 </html>
-
 
 <!--Display flex : direction "raw" rangée (H) ou "column" colonne (V)
   Version mobile → autre f : flexwap. (retour à la ligne automatique, filtre)
