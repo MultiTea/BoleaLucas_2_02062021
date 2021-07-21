@@ -2,17 +2,14 @@
 html,
 body {
   font-family: Raleway;
-  margin-left: 1em;
-  margin-right: 1em;
+  padding: 0 50px;
+  width: fit-content;
+  max-width: 1440px;
+  margin: auto;
 }
 
 a {
   color: black;
-}
-
-#blocpage {
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
 h1 {
@@ -24,8 +21,8 @@ h1 {
 
 h2 {
   font-family: Raleway;
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 22px;
+  font-weight: bolder;
   margin-block-start: 0;
   margin-block-end: 8px;
 }
@@ -46,13 +43,20 @@ h3, p, ul {
   margin-block-end: 0;
 }
 
+figure {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+
 /* NAVIGATION */
 
 header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 32px 20px 32px 20px;
+  margin: 36px 0;
 }
 
 #logo {
@@ -61,57 +65,63 @@ header {
   justify-content: space-between;
 }
 #logo img {
-  height: 50px;
-  padding-top: 15px;
+  height: 45px;
+  padding-top: 8px;
+  padding-left: 3px;
 }
 
 .ancres {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-  margin: 5px 30px 5px 30px;
+  align-items: flex-end;
+  margin: 5px 0px 5px 0px;
 }
 
-nav ul {
-  list-style-type: none;
-  display: flex;
-  width: 450px;
-}
-nav li {
-  padding-right: 90px;
-  border: 1px solid black;
-}
 nav a {
   color: black;
   text-decoration: none;
   text-align: center;
   width: auto;
 }
-nav a:hover {
-  color: #0065fc;
-  border-top: 3px solid #0065fc;
-  padding-top: 52px;
+
+nav span {
+  padding: 0 35px 0 35px;
+  text-align: center;
 }
 
-#inscription {
+a strong {
   font-weight: bold;
   color: #0065fc;
-  border: 1px solid black;
+}
+
+nav span:hover {
+  color: #0065fc;
+  border-top: 3px solid #0065fc;
+  padding-top: 39px;
+  animation-name: animation-nav;
+  animation-duration: 0.2s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes animation-nav {
+  from {border-top: 0px solid #0065fc}
+  to { border-top: 3px solid #0065fc}
 }
 
 /* Barre de recherche */
 
 #titre-recherche h2 p {
   padding: none;
-  margin-block-start: 0;
-  margin-block-end: 0;
+}
+
+#blocrecherche {
+  padding-left: 5px;
 }
 
 form {
 display: flex;
 flex-direction: row;
-width: 380px;
+width: 400px;
 height: 42px;
 margin-top: 20px;
 margin-bottom: 12px;
@@ -127,7 +137,7 @@ margin-bottom: 12px;
   font-family: Raleway;
   font-weight: bold;
   padding-left: 15px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 #map {
@@ -135,25 +145,26 @@ margin-bottom: 12px;
   border: 1px solid #f2f2f2;
   border-radius: 10px 0 0 10px;
   background-color: #f2f2f2;
-  width: 40px;
-  height: 38px;
+  width: 48px;
+  height: 44px;
   color: black;
+  font-size: 18px;
 }
 
 input {
   width: 240px;
-  height: 40px;
+  height: 46px;
   font-weight: bold;
 }
 
 #bouton {
   font-family: Raleway;
-  font-size: 14px;
+  font-size: 16px;
   color: white;
   font-weight: bold;
   background-color: #0065fc;
-  height: 40px;
-  width: 110px;
+  height: 46px;
+  width: 140px;
   border: none;
   border-radius: 0 10px 10px 0 ;
 }
@@ -167,22 +178,23 @@ input {
 #Titre-filtre {
 display: flex;
 align-items: center;
+padding-right: 16px;
 }
 
 #liens {
   display: flex;
   justify-content: flex-start;
-  padding: 12px 20px 0 20px;
+  padding: 24px 20px 0 8px;
 }
-
 
 #liens li {
   list-style-type: none;
   width: auto;
   border: 1px solid #f2f2f2;
   border-radius: 20px;
-  height: 40px;
+  height: 44px;
   margin-left: 20px;
+  padding: 0 5px 0 0;
 }
 
 #liens ul {
@@ -207,65 +219,93 @@ align-items: center;
 #billet {
 display: flex;
 background-color: #deebff;
-width: 40px;
-height: 40px;
+width: 44px;
+height: 44px;
 border-radius: 20px;
+font-size: 18px;
+}
+
+#liens ul li:hover {
+  background-color: #0065fc1e;
+  border: 1px solid #0065fc;
+  animation-name: animation-liens;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes animation-liens {
+  from {background-color: #6e819c00;border: 1px solid #f2f2f2}
+  to {background-color: #0065fc1e;border: 1px solid #0065fc;}
 }
 
 #enfant {
   display: flex;
   background-color: #deebff;
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   border-radius: 20px;
+  font-size: 18px;
 }
 
 #coeur {
   display: flex;
   background-color: #deebff;
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   border-radius: 20px;
+  font-size: 18px;
 }
 
 #chien {
   display: flex;
   background-color: #deebff;
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   border-radius: 20px;
+  font-size: 18px;
 }
 
 #phrase-info {
   display: flex;
   flex-direction: row;
-  padding: 30px 20px 30px 20px;
+  padding: 30px 20px 30px 6px;
   align-items: center;
 }
 
 #info {
   display: flex;
   border: solid 1.5px #f2f2f2;
-  width: 0.5px;
-  height: 0.5px;
   border-radius: 20px;
-  padding: 14px;
+  padding: 12px;
   margin-right: 12px;
+  font-size: 14px;
+  height: 1px;
+  width: 1px;
 }
 
 
 /* Sections hébergements */
 
+.main {
+  flex-direction: column;
+  width: 100%;
+  padding-top: 20px;
+}
+
 #blochebergement-populaire {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
   
+#titre-hebergement {
+  padding-left: 62px;
+  margin-top: 40px;
+}
+
 #hebergements {
 background-color: #f2f2f2;
 border-radius: 20px;
-padding: 30px 0 0 30px;
-width: 65%;
+width: 65.6%;
 }
 
 article{
@@ -275,10 +315,6 @@ article{
 
 article img {
   object-fit: cover;
-}
-
-#hebergements h1 {
-  margin-bottom: 20px;
 }
 
 #encarts a{
@@ -293,46 +329,56 @@ color: black;
 #encarts {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  padding-right: 30px;
+  padding: 4px 25px 0 26px;
 }
 
 #encarts figure {
-  width: 226px;
-  height: 180px;
+  width: 244px;
+  height: 195px;
   border: 1px solid white;
   border-radius: 20px;
-  box-shadow: 1px 1px 6px #7a7d7f;
+  box-shadow: 1px 1px 6px #bebebe;
 }
 
 .carte{
-  margin-bottom: 30px;
+  margin: 15px;
 }
 
 #illus {
-width: 224px;
-height: 110px;
+width: 238px;
+height: 112px;
 border: 3px solid white;
 border-radius: 20px 20px 0 0;
 }
 
 #legend {
-  width: 214px;
+  width: 228px;
   height: 70px;
   border: 3px solid white;
   border-radius: 0 0 20px 20px;
-  color: black;
   padding-left: 10px;
-  margin-top: -6px;
+  padding-top: 2px;
+  margin-top: -4px;
   background-color: white;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+#legend strong {
+  color: black;
+  font-size: 16px;
+}
+
+#legend span i {
+  font-size: 12px;
 }
 
 #fig i {
-  padding-top: 8px;
+  letter-spacing: -3px;
 }
 
 #star-grey {
-  color: #7a7d7f;
+  color: #f2f2f2;
 }
 
 
@@ -340,8 +386,9 @@ border-radius: 20px 20px 0 0;
 aside {
   background-color: #f2f2f2;
   border-radius: 20px;
-  padding: 30px 0 0 30px;
-  width: 30%;
+  padding: 40px 0 0 40px;
+  width: 28.5%;
+  float: right;
 }
 
 aside img {
@@ -362,8 +409,8 @@ aside img {
 }
 
 #entete_populaires figure {
-  width: 460px;
-  height: 180px;
+  width: 424px;
+  height: 110px;
   border: 1px solid white;
   border-radius: 20px;
   box-shadow: 1px 1px 6px #7a7d7f;
@@ -376,34 +423,48 @@ aside img {
 
 #graph {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
+#graph i {
+  color: black;
+  padding-right: 30px;
+}
 
 #illus2 {
-width: 424px;
-height: 110px;
-border: 3px solid white;
+width: 126px;
+height: 134px;
+border: 5px solid white;
 border-radius: 20px 0 0 20px;
 }
 
 #legend2 {
-  width: 414px;
-  height: 110px;
+  width: 150px;
+  height: 124px;
   border: 3px solid white;
   border-radius: 0 20px 20px 0 ;
   color: black;
+  padding-top: 14px;
   padding-left: 10px;
   padding-right: 42px;
   background-color: white;
-  
+  font-size: 14px;
+  line-height: 22px;
+}
+
+#legend2 strong {
+  color: black;
+  font-size: 14px;
+}
+
+#legend2 span i {
+  font-size: 12px;
 }
 
 #fig2 i {
-  size: 2px;
-  padding-top: 8px;
+  padding-top: 16px;
+  letter-spacing: -3px;
 }
-
   
   footer {
     display: flex;

@@ -23,15 +23,16 @@
     </div>
     <nav>
       <div class="ancres">
-        <ul id="liens_mobiles">
-          <li><a href="#hebergements" id="lien_hebergements">Hébergements</a></li>
-          <li><a href="#activites" id="lien_activites">Activités</a></li>
-        </ul>
-          <span id="inscription">S'inscrire</span>
+        <div id="liens_mobiles">
+          <span><a href="#hebergements" id="lien_hebergements">Hébergements</a></span>
+          <span><a href="#activites" id="lien_activites">Activités</a></span>
+          <span><a href="#activites" id="lien_activites"><strong>S'inscrire</strong></a></span>
+        </div>
       </div>
     </nav>
   </header>
-    <!--Ancre sur la partie menu-->
+  
+<!--Ancre sur la partie menu-->
 
     <div id="blocpage">
       <section id="blocrecherche">
@@ -75,9 +76,62 @@
 
       <section id="blochebergement-populaire">
         
-        <div id="hebergements">
+      <div class="main">
+
+        <aside id="lespopulaires">
+          <div id="graph"><h2>Les plus populaires</h2><i class="fas fa-chart-line"></i></div>
+          <div id="entete-populaires">
+
+            <a href="#" class="carte">
+              <figure id="fig2">
+                <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Photo chambre Hôtel Le Soleil du Matin" id="illus2"/>
+                <figcaption id="legend2"><strong>Hôtel Le Soleil du Matin</strong><br />
+                  Nuit à partir de <strong>128€</strong><br />
+                  <span><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i></span>
+                </figcaption>
+              </figure>
+            </a>
+
+            <a href="#" class="carte">
+              <figure id="fig2">
+                <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Photo chambre Au Coeur de l'eau Chambres d'hôtes" id="illus2"/>
+                <figcaption id="legend2"><strong>Au Coeur de l'eau Chambres d'hôtes</strong><br />
+                  Nuit à partir de <strong>71€</strong><br />
+                  <span><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star" id="star-grey"></i></span>
+                </figcaption>
+              </figure>
+            </a>
+
+            <a href="#" class="carte">
+              <figure id="fig2">
+                <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Photo chambre Hôtel Tout bleu et blanc" id="illus2"/>
+                <figcaption id="legend2"><strong>Hôtel Tout bleu et blanc</strong><br />
+                  Nuit à partir de <strong>68€</strong><br />
+                  <span><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star" id="star-grey"></i></span>
+                </figcaption>
+              </figure>
+            </a>
+
+          </div>
+        
+
+          </aside>
+        
+        <article id="hebergements">
           
-          <h1>Hébergements à Marseille</h1>
+          <h2 id="titre-hebergement">Hébergements à Marseille</h2>
            
           <div id="encarts">
               
@@ -167,59 +221,12 @@
 
           </div>
           <a href="# ">Afficher plus</a>
+        </article>
+
         </div>
-
-        <aside id="lespopulaires">
-          <h1>Les plus populaires</h1><i class="fas fa-chart-line-up" id="graph"></i>
-          <div id="entete-populaires">
-
-            <a href="#" class="carte">
-              <figure id="fig2">
-                <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Photo chambre Hôtel Le Soleil du Matin" id="illus2"/>
-                <figcaption id="legend2"><strong>Hôtel Le Soleil du Matin</strong><br />
-                  Nuit à partir de <strong>128€</strong><br />
-                  <span><i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i></span>
-                </figcaption>
-              </figure>
-            </a>
-
-            <a href="#" class="carte">
-              <figure id="fig2">
-                <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Photo chambre Au Coeur de l'eau Chambres d'hôtes" id="illus2"/>
-                <figcaption id="legend2"><strong>Au Coeur de l'eau Chambres d'hôtes</strong><br />
-                  Nuit à partir de <strong>71€</strong><br />
-                  <span><i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star" id="star-grey"></i></span>
-                </figcaption>
-              </figure>
-            </a>
-
-            <a href="#" class="carte">
-              <figure id="fig2">
-                <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Photo chambre Hôtel Tout bleu et blanc" id="illus2"/>
-                <figcaption id="legend2"><strong>Hôtel Tout bleu et blanc</strong><br />
-                  Nuit à partir de <strong>68€</strong><br />
-                  <span><i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star" id="star-grey"></i></span>
-                </figcaption>
-              </figure>
-            </a>
-
-          </div>
-        
-
-        </aside>
       </section>
+
+
       <section id="activites">
         <h1>Activités à Marseille</h1>
 
