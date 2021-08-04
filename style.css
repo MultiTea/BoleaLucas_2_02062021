@@ -21,7 +21,7 @@ h1 {
 
 h2 {
   font-family: Raleway;
-  font-size: 22px;
+  font-size: 1.395em;
   font-weight: bolder;
   margin-block-start: 0;
   margin-block-end: 8px;
@@ -74,7 +74,7 @@ header {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  margin: 5px 0px 5px 0px;
+  margin: 12px 0;
 }
 
 nav a {
@@ -85,19 +85,19 @@ nav a {
 }
 
 nav span {
-  padding: 0 35px 0 35px;
+  padding: 0 31px 0 31px;
   text-align: center;
 }
 
 a strong {
   font-weight: bold;
-  color: #0065fc;
+  color: #0065fc
 }
 
 nav span:hover {
   color: #0065fc;
   border-top: 3px solid #0065fc;
-  padding-top: 39px;
+  padding-top: 46px;
   animation-name: animation-nav;
   animation-duration: 0.2s;
   animation-timing-function: ease-in-out;
@@ -116,12 +116,13 @@ nav span:hover {
 
 #blocrecherche {
   padding-left: 5px;
+  padding-top: 1px;
 }
 
 form {
 display: flex;
 flex-direction: row;
-width: 400px;
+width: 420px;
 height: 42px;
 margin-top: 20px;
 margin-bottom: 12px;
@@ -137,36 +138,36 @@ margin-bottom: 12px;
   font-family: Raleway;
   font-weight: bold;
   padding-left: 15px;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 #map {
   display: flex;
-  border: 1px solid #f2f2f2;
-  border-radius: 10px 0 0 10px;
+  border: 2px solid #f2f2f2;
+  border-radius: 15px 0 0 15px;
   background-color: #f2f2f2;
-  width: 48px;
-  height: 44px;
+  width: 52px;
+  height: 46px;
   color: black;
   font-size: 18px;
 }
 
 input {
-  width: 240px;
-  height: 46px;
+  width: 260px;
+  height: 50px;
   font-weight: bold;
 }
 
 #bouton {
   font-family: Raleway;
-  font-size: 16px;
+  font-size: 18px;
   color: white;
   font-weight: bold;
   background-color: #0065fc;
-  height: 46px;
-  width: 140px;
+  height: 50px;
+  width: 150px;
   border: none;
-  border-radius: 0 10px 10px 0 ;
+  border-radius: 0 15px 15px 0 ;
 }
 
 #search {
@@ -179,20 +180,21 @@ input {
 display: flex;
 align-items: center;
 padding-right: 16px;
+font-size: 18px;
 }
 
 #liens {
   display: flex;
   justify-content: flex-start;
-  padding: 24px 20px 0 8px;
+  padding: 27px 20px 0 12px;
 }
 
 #liens li {
   list-style-type: none;
   width: auto;
-  border: 1px solid #f2f2f2;
-  border-radius: 20px;
-  height: 44px;
+  border: 2px solid #f2f2f2;
+  border-radius: 25px;
+  height: 48px;
   margin-left: 20px;
   padding: 0 5px 0 0;
 }
@@ -204,7 +206,7 @@ padding-right: 16px;
 }
 
 #liens i {
-  margin-right: 12px;
+  margin-right: 14px;
 }
 
 #liens a {
@@ -212,63 +214,64 @@ padding-right: 16px;
   flex-direction: row;
   font-weight: bold;
   align-items: center;
-  margin-right: 12px;
+  margin-right: 17px;
   text-decoration: none;
+  font-size: 18px;
 }
 
 #billet {
 display: flex;
 background-color: #deebff;
-width: 44px;
-height: 44px;
-border-radius: 20px;
-font-size: 18px;
+width: 48px;
+height: 48px;
+border-radius: 25px;
+font-size: 20px;
 }
 
 #liens ul li:hover {
   background-color: #0065fc1e;
-  border: 1px solid #0065fc;
+  border: 2px solid #0065fc;
   animation-name: animation-liens;
   animation-duration: 0.3s;
   animation-timing-function: ease-in-out;
 }
 
 @keyframes animation-liens {
-  from {background-color: #6e819c00;border: 1px solid #f2f2f2}
-  to {background-color: #0065fc1e;border: 1px solid #0065fc;}
+  from {background-color: #6e819c00;border: 2px solid #f2f2f2}
+  to {background-color: #0065fc1e;border: 2px solid #0065fc;}
 }
 
 #enfant {
   display: flex;
   background-color: #deebff;
-  width: 44px;
-  height: 44px;
-  border-radius: 20px;
-  font-size: 18px;
+  width: 48px;
+  height: 48px;
+  border-radius: 25px;
+  font-size: 20px;
 }
 
 #coeur {
   display: flex;
   background-color: #deebff;
-  width: 44px;
-  height: 44px;
-  border-radius: 20px;
-  font-size: 18px;
+  width: 48px;
+  height: 48px;
+  border-radius: 25px;
+  font-size: 20px;
 }
 
 #chien {
   display: flex;
   background-color: #deebff;
-  width: 44px;
-  height: 44px;
-  border-radius: 20px;
-  font-size: 18px;
+  width: 48px;
+  height: 48px;
+  border-radius: 25px;
+  font-size: 20px;
 }
 
 #phrase-info {
   display: flex;
   flex-direction: row;
-  padding: 30px 20px 30px 6px;
+  padding: 34px 20px 18px 8px;
   align-items: center;
 }
 
@@ -276,9 +279,9 @@ font-size: 18px;
   display: flex;
   border: solid 1.5px #f2f2f2;
   border-radius: 20px;
-  padding: 12px;
+  padding: 10px;
   margin-right: 12px;
-  font-size: 14px;
+  font-size: 12px;
   height: 1px;
   width: 1px;
 }
@@ -295,11 +298,12 @@ font-size: 18px;
 #blochebergement-populaire {
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: 58px;
 }
   
 #titre-hebergement {
-  padding-left: 62px;
-  margin-top: 40px;
+  padding-left: 40px;
+  margin-top: 41px;
 }
 
 #hebergements {
@@ -329,7 +333,7 @@ color: black;
 #encarts {
   display: flex;
   flex-wrap: wrap;
-  padding: 4px 25px 0 26px;
+  padding: 0px 25px 0 26px;
 }
 
 #encarts figure {
@@ -337,7 +341,7 @@ color: black;
   height: 195px;
   border: 1px solid white;
   border-radius: 20px;
-  box-shadow: 1px 1px 6px #bebebe;
+  box-shadow:1px 2px 12px #c7c7c7;
 }
 
 .carte{
@@ -345,28 +349,30 @@ color: black;
 }
 
 #illus {
-width: 238px;
+width: 236px;
 height: 112px;
-border: 3px solid white;
+border: 4px solid white;
 border-radius: 20px 20px 0 0;
 }
 
 #legend {
-  width: 228px;
+  width: 226px;
   height: 70px;
   border: 3px solid white;
   border-radius: 0 0 20px 20px;
-  padding-left: 10px;
+  padding-left: 12px;
   padding-top: 2px;
   margin-top: -4px;
   background-color: white;
-  font-size: 14px;
-  line-height: 22px;
+  font-size: 13.5px;
+  line-height: 21px;
+  letter-spacing: 0.2px;
 }
 
 #legend strong {
   color: black;
   font-size: 16px;
+  letter-spacing: 0.2px;
 }
 
 #legend span i {
@@ -380,6 +386,17 @@ border-radius: 20px 20px 0 0;
 #star-grey {
   color: #f2f2f2;
 }
+
+#plus_bouton {
+  text-decoration: none;
+  padding: 25px 0 50px 20px;
+}
+
+#plus_bouton strong {
+  color: black;
+  font-size: 18px;
+}
+  
 
 
 
@@ -400,25 +417,25 @@ aside img {
   color: black;
 }
 
-#entete_populaires {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: baseline;
-  margin-bottom: 20px;
+#entete-populaires {
+  flex-direction: column;
+  margin-bottom: -6px;
+  margin-top: 10px;
 }
 
-#entete_populaires figure {
-  width: 424px;
-  height: 110px;
+#entete-populaires figure {
+  width: 340px;
+  height: 144px;
   border: 1px solid white;
   border-radius: 20px;
-  box-shadow: 1px 1px 6px #7a7d7f;
+  box-shadow:1px 2px 12px #c7c7c7;
+  margin-bottom: 22px;
 }
 
 #fig2 {
   display: flex;
   flex-direction: row;
+  margin-top: -10px;
 }
 
 #graph {
@@ -428,7 +445,8 @@ aside img {
 
 #graph i {
   color: black;
-  padding-right: 30px;
+  padding-right: 36px;
+  font-size: 24px;
 }
 
 #illus2 {
@@ -454,23 +472,145 @@ border-radius: 20px 0 0 20px;
 
 #legend2 strong {
   color: black;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 #legend2 span i {
   font-size: 12px;
+  padding-top: 34px;
 }
 
 #fig2 i {
   padding-top: 16px;
   letter-spacing: -3px;
 }
+
+/** Activités à Marseille**/
+
+#activites {
+  margin-top: -2px;
+}
+
+#activites h1 {
+font-size: 1.35em;
+letter-spacing: 0.5px;
+margin-bottom: 8px;
+}
+
+#activites a {
+  text-decoration: none;
+}
+
+#encart-activite {
+  display: flex;
+  padding-left: -5px;
+  margin-bottom: 60px;
+}
+
+#fig3 {
+  width: 300px;
+  height: 446px;
+  border-radius: 20px;
+  box-shadow:1px 2px 12px #c7c7c7;
+  margin-right: 30px;
+}
+
+#encart-activite .carte {
+  margin-left: 0px;
+}
+
+#illus3 {
+  height: 390px;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+  object-position: center;
+  }
   
+#legend3 {
+  width: 282px;
+  height: 38px;
+  border-radius: 0 0 20px 20px;
+  padding-left: 18px;
+  padding-top: 14px;
+  background-color: white;
+  font-size: 14px;
+  line-height: 21px;
+  }
+  
+#legend3 strong {
+  color: black;
+  font-size: 16px;
+  }
+
+#column {
+  flex-shrink: 1;
+  height: 428px;
+  padding-top: 14px;
+}
+
+#fig4 {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  border-radius: 20px;
+  box-shadow:1px 2px 12px #c7c7c7;
+  margin-right: 50px;
+}
+  
+#illus4 {
+height: 180px;
+width: 100%;
+border-radius: 20px 20px 0 0;
+object-fit: cover;
+object-position: center;
+}
+  
+#legend4 {
+width: 282px;
+height: 40px;
+border-radius: 0 0 20px 20px;
+padding-left: 18px;
+padding-top: 14px;
+background-color: white;
+font-size: 14px;
+line-height: 21px;
+}
+
+#legend4 strong {
+  color: black;
+  font-size: 16px;
+  }
+
+/** Bas de page **/
+
   footer {
+    height: 200px;
+    background-color: #f2f2f2;
+    margin-left: -50px;
+  }
+
+  #basdepage {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 75%;
+    width: 73%;
+    padding-left: 50px;
+  }
+
+  .column2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 28px;
+  }
+
+  .column2 strong {
+  padding-bottom: 14px;
+  font-size: 18px;
+  }
+
+  .column2 a {
+  line-height: 32px;
   }
   
   
