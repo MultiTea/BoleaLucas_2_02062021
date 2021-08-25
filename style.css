@@ -11,14 +11,12 @@ a {
   color: black;
 }
 
-h1 {
+{
   font-family: Raleway;
   font-weight: bold;
-  margin-block-start: 0;
-  margin-block-end: 0;
 }
 
-h2 {
+h1, h3, h4 {
   font-family: Raleway;
   font-size: 1.395em;
   font-weight: bolder;
@@ -26,7 +24,7 @@ h2 {
   margin-block-end: 8px;
 }
 
-h3 {
+h2 {
   font-family: Raleway;
   font-size: 18px;
 }
@@ -493,7 +491,7 @@ border-radius: 20px 0 0 20px;
   margin-top: -2px;
 }
 
-#activites h1 {
+#activites h5 {
 font-size: 1.35em;
 letter-spacing: 0.5px;
 margin-bottom: 8px;
@@ -679,10 +677,6 @@ line-height: 21px;
       margin: 0;
     }
 
-    #button {
-    
-    }
-
     header {
       flex-direction: column;
       margin: 0;
@@ -705,16 +699,17 @@ line-height: 21px;
 
     #liens_mobiles {
       display: flex;
+      margin-top: 20px;
     }
 
     nav span #lien_hebergements {
-      margin-left: 20px;
-      margin-right: 20px;
+      margin-left: 45px;
+      margin-right: 45px;
     }
 
     #lien_activites {
-      margin-left: 20px;
-      margin-right: 20px;
+      margin-left: 55px;
+      margin-right: 55px;
     }
 
     #lien_inscription {
@@ -749,17 +744,23 @@ line-height: 21px;
       
 
     #titre-recherche {
-      padding-top: 25px;
+      padding-top: 16px;
+      margin-left: 20px;
       width: 80%;
     }
 
     #bouton {
       width: 50px;
       border-radius: 15px;
+      margin-left: -20px;
+    }
+
+    #barre-recherche {
+      margin-left: 18px;
     }
 
     #champ-recherche {
-      width: 260px;
+      width: 70%;
     }
 
     #search {
@@ -776,14 +777,21 @@ line-height: 21px;
     position: absolute;
     }
 
+    #liens {
+      padding:0;
+      margin-left: 20px;
+      margin-top: 24px;
+    }
+
 
     #liens a {
       font-size: 16px;
-      margin: 0;
+      margin-right: 8px;
     }
 
     #liens i {
       font-size: 14px;
+      margin-right: 10px;
     }
 
     #liens ul {
@@ -799,6 +807,8 @@ line-height: 21px;
     }
 
     #phrase-info {
+      padding-left: 20px;
+      padding-top: 20px;
     }
 
     #info {
@@ -808,6 +818,11 @@ line-height: 21px;
       justify-content: left;
       width: 100%;
     }
+
+#titre-hebergement {
+  padding-left: 18px;
+  margin-top: 34px;
+}
 
     #main {
       flex-direction: column-reverse;
@@ -846,18 +861,27 @@ line-height: 21px;
 
 #encarts {
   padding: 0;
+  margin: 0;
   width: auto;
 }
 
 #encarts figure {
-  display: flex;
-  flex-direction: column;
+margin:0;
+width:138%;
 }
 
+.illus {
+  width:97.5%;
+}
+
+.legend {
+  height: 0;
+}
 
     #hebergements {
       width: 100%;
       background-color: transparent;
+      margin: 0;
     }
 
     #activites {
@@ -866,17 +890,73 @@ line-height: 21px;
 
     #encart-activite {
       flex-direction: column;
-      width: 50%;
+      width: 80%;
+      margin-bottom: 60px;
     }
+
+#plus_bouton {
+  padding: 20px 0 20px 20px;
+}
+
+#activites h5 {
+  margin-left: 16px;
+}
+
+.fig3 {
+  height: 30%;
+  margin-left: 18px;
+  width: 340px;
+}
+
+.column {
+  height: 0%;
+  padding-top: 0;
+  margin-bottom: -20px;
+}
+
+.column .fig4 {
+  margin-left: 18px;
+  width: 340px;
+  margin-bottom: 0;
+}
+
+.illus3 {
+    height: 120px;
+    object-position: top; 
+}
+
+#illus4 {
+  height: 120px;
+  object-position: center; 
+}
+
+#illus5 {
+    height: 120px;
+    object-position: top;  
+}
+
+#illus6 {
+  height: 120px;
+  object-position: top;
+}    
+
+#illus7 {
+    height: 120px;
+    object-position: center;  
+}
 
     footer {
       height: auto;
+      width: 375px;
+      margin: 0;
     }
 
     #basdepage {
       flex-direction: column;
-      height: 550px;
+      height: 480px;
       justify-content: start;
+      padding-top: 20px;
+      padding-left: 25px;
     }
 
     #column3 {
