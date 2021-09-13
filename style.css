@@ -476,7 +476,7 @@ article img {
 
 #plus_bouton {
   text-decoration: none;
-  padding: 25px 0 50px 20px;
+  padding: 25px 0 50px 45px;
 }
 
 #plus_bouton strong {
@@ -681,25 +681,28 @@ footer {
   }
 
   .ancres {
-    flex-direction: column-reverse;
-    flex-wrap: wrap-reverse;
-    width: auto;
-    align-content: space-around;
+ display: block;
+  }
+
+  nav span #lien_inscription {
+    width: 150px;
   }
 
   #liens_mobiles {
     display: flex;
+    flex-direction: row;
     margin-top: 20px;
+    width: 100%;
   }
 
-  nav span #lien_hebergements {
-    margin-left: 45px;
-    margin-right: 45px;
+ #lien_hebergements {
+    margin-left: 25%;
+    margin-right: 25%;
   }
 
   #lien_activites {
-    margin-left: 55px;
-    margin-right: 55px;
+    margin-left: 25%;
+    margin-right: 25%;
   }
 
   #lien_inscription {
@@ -711,6 +714,7 @@ footer {
   }
 
   nav span {
+    width: 50%;
     padding: 0;
     border-bottom: 3px solid #f2f2f2;
     padding-bottom: 10px;
@@ -827,8 +831,11 @@ footer {
   }
 
   #lespopulaires {
-    width: inherit;
+    width: 100%;
     border-radius: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
 
   #graph {
@@ -851,6 +858,16 @@ footer {
     width: 94%;
   }
 
+  #entete-populaires img {
+    margin: 0;
+    width: 24%;
+  }
+
+  #entete-populaires figcaption {
+    margin: 0;
+    width: 76%;
+  }
+
   /* HÉBERGEMENTS */
 
   #hebergements {
@@ -867,16 +884,20 @@ footer {
   #encarts {
     padding: 0;
     margin: 0;
-    width: auto;
+    width: 100%;
+  }
+
+  #encarts .carte {
+    width: 100%;
   }
 
   #encarts figure {
     margin: 0;
-    width: 138%;
+    width: 100%
   }
 
   .illus {
-    width: 97.5%;
+    width: 98.5%;
   }
 
   .legend {
@@ -891,17 +912,23 @@ footer {
 
   #encart-activite {
     flex-direction: column;
-    width: 80%;
+    align-items: stretch;
+    width: 100%;
     margin-bottom: 60px;
+    margin-left: 8px;
   }
+
+  #encart-activite .carte {
+    margin-left: 15px;
+  }
+
   #activites h5 {
     margin-left: 16px;
   }
 
   .fig3 {
     height: 30%;
-    margin-left: 18px;
-    width: 340px;
+    width: 95%;
   }
 
   .column {
@@ -911,9 +938,11 @@ footer {
   }
 
   .column .fig4 {
-    margin-left: 18px;
-    width: 340px;
+    height: 30%;
+    margin-left: 15px;
+    width: 89%;
     margin-bottom: 0;
+    margin-right: 0px;
   }
 
   .illus3 {
@@ -945,16 +974,17 @@ footer {
 
   footer {
     height: auto;
-    width: 375px;
+    width: 100%
     margin: 0;
   }
 
   #basdepage {
+    width: fit-content;
     flex-direction: column;
     height: 480px;
     justify-content: start;
     padding-top: 20px;
-    padding-left: 25px;
+    margin-left: 30px;
   }
 
   #column3 {
@@ -964,9 +994,8 @@ footer {
 
 /* VERISON TABLETTE */
 
-@media all and (min-width: 668px) and (max-width: 1024px) {
+@media all and ( min-width : 668px ) and (max-width : 1044px ){
   body {
-    width: auto;
     margin: 0;
     padding: 0;
   }
@@ -1085,18 +1114,21 @@ footer {
   #main {
     flex-direction: column-reverse;
     flex-wrap: wrap;
-    width: 100%;
+    width: fit-content;
   }
 
   /* POPULAIRES */
 
   aside {
     padding: 0;
+    float: none;
+   padding-top: 1px;
+  padding-bottom: 1px;
   }
 
   #lespopulaires {
-    width: inherit;
     border-radius: 0;
+    width: 100%;
   }
 
   #graph {
@@ -1115,7 +1147,7 @@ footer {
     margin-left: 40px;
     margin-bottom: 20px;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-content: center;
     width: 90%;
   }
@@ -1155,8 +1187,8 @@ footer {
   #encarts {
     padding: 0;
     margin: 0;
-    width: 95%;
-    padding-left: 40px;
+    width: 100%;
+    justify-content: center;
   }
 
   #encarts figure {
@@ -1173,7 +1205,7 @@ footer {
   }
 
   #plus_bouton {
-    padding: 20px 0 20px 20px;
+    padding: 20px 0 20px 40px;
   }
 
   /* ACTIVITÉS */
